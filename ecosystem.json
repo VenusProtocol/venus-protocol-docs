@@ -1,0 +1,15 @@
+{
+    "apps": [],
+  
+    "deploy" : {
+      "testnet" : {
+        "user" : "ubuntu",
+        "host" : "swipe-bsc-testnet",
+        "ref"  : "origin/master",
+        "repo" : "git@github.com:SwipeWallet/venus-protocol-docs.git",
+        "path" : "/home/ubuntu/repos/venus-protocol-docs",
+        "post-deploy" : "npm install && npm run build && cp .htaccess build/.htaccess"
+      }
+    }
+  }
+  

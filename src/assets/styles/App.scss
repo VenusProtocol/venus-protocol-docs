@@ -1,0 +1,132 @@
+@import 'assets/styles/Global.scss';
+
+body {
+    /* width */
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 5px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #F6F6F6; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: gray;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+}
+.switch-wrapper {
+    position: relative;
+}
+
+.scrollbar {
+    /* width */
+      &::-webkit-scrollbar {
+        width: 2px;
+        height: 5px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #F6F6F6; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #D8D8D8;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #D8D8D8; 
+    }
+}
+
+.ReactCollapse--collapse {
+    transition: height 500ms;
+}
+// Common CSS
+
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.align-center {
+    align-items: center;
+}
+.just-center {
+    justify-content: center;
+}
+.just-between {
+    justify-content: space-between;
+}
+.just-around {
+    justify-content: space-around;
+}
+.just-end {
+    justify-content: flex-end;
+}
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.pointer {
+    cursor: pointer;
+}
+.bold {
+    font-weight: bold;
+}
+.menu-item-active {
+    color: var(--color-yellow) !important;
+}
+
+// Common Style
+h4 { // Page name
+    font-size: 25px;
+    font-weight: 900;
+    line-height: normal;
+    color: var(--color-text-main);
+    margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+h3 { // Title
+    font-size: 39px;
+    font-weight: 900;
+    line-height: normal;
+    color: var(--color-text-main);
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+        margin-bottom: 20px !important;
+    }
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: normal;
+    color: var(--color-text-secondary);
+}
+
+a {
+  color: var(--color-link-yellow);
+}

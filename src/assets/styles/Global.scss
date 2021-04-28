@@ -1,0 +1,39 @@
+@font-face {
+    font-family: AvenirNext;
+    src: url("../../assets/font/Avenir-next/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+
+:root {
+    /* Common styles */
+    --color-red: #FF0000;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-blue: #0082B8;
+    --color-green: #25d439;
+    --color-gray: #FAFAFA;
+    --color-dark-gray: #42434e;
+    --color-yellow: #F9B546;
+    --color-light-yellow: #fae0b1;
+    --color-purple: #BB85AB;
+    /* Background colors */
+    --color-bg-header: #020522;
+    --color-bg-sidebar: #f6f6f6;
+    --color-bg-main: #FCFCFC;
+    --color-bg-primary: #FFFFFF;
+    /* Typography colors */
+    --color-text-main: #181c3a;
+    --color-text-secondary: #6e6e6e;
+    --color-border-main: #EAEAEA;
+    --color-link-yellow: #ffb900;
+}
+
+body * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "AvenirNext";
+}
+
+a, div, span, p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0px;
+    font-family: "AvenirNext";
+}
