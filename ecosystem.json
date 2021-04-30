@@ -4,9 +4,9 @@
     "deploy" : {
       "testnet" : {
         "user" : "ubuntu",
-        "host" : "swipe-bsc-testnet",
+        "host" : "3.10.133.254",
         "ref"  : "origin/master",
-        "repo" : "git@github.com:SwipeWallet/venus-protocol-docs.git",
+        "repo" : "git@github.com:VenusProcotol/venus-protocol-docs.git",
         "path" : "/home/ubuntu/repos/venus-protocol-docs",
         "post-deploy" : "npm install && npm run build && cp .htaccess build/.htaccess"
       }
