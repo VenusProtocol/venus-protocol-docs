@@ -10,6 +10,7 @@ import OpenPriceFee from 'containers/Docs/OpenPriceFee';
 import API from 'containers/Docs/API';
 import VenusJS from 'containers/Docs/VenusJS';
 import Security from 'containers/Docs/Security';
+import VaiController from 'containers/Docs/VaiController';
 
 const DocsContainerWrapper = styled.div`
   
@@ -32,6 +33,7 @@ function DocsContainer() {
         <Route exact path="/docs/api" component={API} />
         <Route exact path="/docs/venus-js" component={VenusJS} />
         <Route exact path="/docs/security" component={Security} />
+        <Route exact path="/docs/vaicontroller" component={VaiController} />
       </DocsContainerWrapper>
     </AnimatedSwitch>
   );

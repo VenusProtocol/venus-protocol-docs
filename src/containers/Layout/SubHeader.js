@@ -94,6 +94,7 @@ const subRouters = [
   { label: 'GETTING STARTED', path: '/docs/getstarted' },
   { label: 'VTOKENS', path: '/docs/vtokens' },
   { label: 'UNITROLLER', path: '/docs/unitroller' },
+  { label: 'VAI CONTROLLER', path: '/docs/vaicontroller' },
   { label: 'GOVERNANCE', path: '/docs/governance' },
   // { label: 'OPEN PRICE FEED', path: '/docs/prices' },
   { label: 'API', path: '/docs/api' },

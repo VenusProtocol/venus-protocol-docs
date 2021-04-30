@@ -44,6 +44,13 @@
         { "label": "Claim Venus", "hash": "claim-xvs" },
         { "label": "Market Metadata", "hash": "market-metadata" }
     ],
+    "vaicontroller": [
+        { "label": "MintVAI", "hash": "mint-vai" },
+        { "label": "RepayVAI", "hash": "repay-vai" },
+        { "label": "LiquidateVAI", "hash": "liquidate-vai" },
+        { "label": "Key Events", "hash": "key-events" },
+        { "label": "Error Codes", "hash": "error-codes" }
+    ],
     "governance": [
         { "label": "Introduction", "hash": "introduction" },
         { "label": "XVS", "hash": "xvs" },
