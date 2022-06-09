@@ -60,7 +60,8 @@ function KeyEvents() {
       <div className="list-section">
         <div className="name">MintVAI(address minter, uint mintVAIAmount)</div>
         <div className="description">
-          Emitted upon a successful <a href="#vaicontroller-mint-vai">MintVAI</a>.
+          Emitted upon a successful{' '}
+          <a href="#vaicontroller-mint-vai">MintVAI</a>.
         </div>
       </div>
       <div className="list-section">
@@ -68,7 +69,8 @@ function KeyEvents() {
           RepayVAI(address payer, address borrower, uint repayAmount)
         </div>
         <div className="description">
-          Emitted upon a successful <a href="#vaicontroller-repay-vai">RepayVAI</a>.
+          Emitted upon a successful{' '}
+          <a href="#vaicontroller-repay-vai">RepayVAI</a>.
         </div>
       </div>
       <div className="list-section">
@@ -77,7 +79,8 @@ function KeyEvents() {
           address vTokenCollateral, uint seizeTokens)
         </div>
         <div className="description">
-          Emitted upon a successful <a href="#vaicontroller-liquidate-vai">LiquidateVAI</a>.
+          Emitted upon a successful{' '}
+          <a href="#vaicontroller-liquidate-vai">LiquidateVAI</a>.
         </div>
       </div>
     </KeyEventsWrapper>

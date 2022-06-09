@@ -28,8 +28,8 @@ function BugBounty() {
       <Description>
         Security is core to our values, and we value the input of hackers acting
         in good faith to help us maintain the highest standard for the security
-        and safety of the BSC ecosystem. The Venus protocol, while it has
-        gone through professional audits and formal verification, depends on new
+        and safety of the BSC ecosystem. The Venus protocol, while it has gone
+        through professional audits and formal verification, depends on new
         technology that may contain undiscovered vulnerabilities.
       </Description>
       <Description>
@@ -55,9 +55,8 @@ function BugBounty() {
         <Label marginBottom>Scope</Label>
         <Description>
           The primary scope of the bug bounty program is for vulnerabilities
-          affecting the on-chain Venus Protocol, deployed to the BSC
-          Mainnet, for contract addresses listed in this developer
-          documentation.
+          affecting the on-chain Venus Protocol, deployed to the BSC Mainnet,
+          for contract addresses listed in this developer documentation.
         </Description>
         <Description>
           This list may change as new contracts are deployed, or as existing

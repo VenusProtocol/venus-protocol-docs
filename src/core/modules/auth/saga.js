@@ -57,8 +57,5 @@ export function* watchLoginRequest() {
 }
 
 export default function*() {
-  yield all([
-    fork(watchHandleAuthErrorRequest),
-    fork(watchLoginRequest)
-  ]);
+  yield all([fork(watchHandleAuthErrorRequest), fork(watchLoginRequest)]);
 }

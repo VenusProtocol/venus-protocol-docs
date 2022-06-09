@@ -26,7 +26,8 @@ function Introduction() {
         venus-api-key; you can request keys from Venus in the{' '}
         <a href="https://t.me/VenusProtocol" target="_blank" rel="noreferrer">
           #Venus Telegram
-        </a> channel. In the future, API keys will be required access the API.
+        </a>{' '}
+        channel. In the future, API keys will be required access the API.
       </Description>
     </IntroductionWrapper>
   );

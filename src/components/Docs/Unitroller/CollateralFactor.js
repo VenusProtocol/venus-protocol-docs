@@ -20,9 +20,12 @@ const CollateralFactorWrapper = styled.div`
 `;
 
 function CollateralFactor() {
-  const unitrollerFormula = 'function markets(address vTokenAddress) view returns (bool, uint, bool)';
-  const solidityFormula = 'Unitroller troll = Unitroller(0xABCD...);\n(bool isListed, uint collateralFactorMantissa, bool isXvsed) = troll.markets(0x3FDA...);';
-  const web3Formular = 'const troll = Unitroller.at(0xABCD...);\nconst result = await troll.methods.markets(0x3FDA...).call();\nconst {0: isListed, 1: collateralFactorMantissa, 2: isXvsed} = result;';
+  const unitrollerFormula =
+    'function markets(address vTokenAddress) view returns (bool, uint, bool)';
+  const solidityFormula =
+    'Unitroller troll = Unitroller(0xABCD...);\n(bool isListed, uint collateralFactorMantissa, bool isXvsed) = troll.markets(0x3FDA...);';
+  const web3Formular =
+    'const troll = Unitroller.at(0xABCD...);\nconst result = await troll.methods.markets(0x3FDA...).call();\nconst {0: isListed, 1: collateralFactorMantissa, 2: isXvsed} = result;';
 
   return (
     <CollateralFactorWrapper id="unitroller-collateral-factor">
@@ -50,7 +53,8 @@ function CollateralFactor() {
       <HighLighter>{unitrollerFormula}</HighLighter>
       <ParameterSection>
         <Parameter name="vTokenAddress">
-          : The address of the vToken to check if listed and get the collateral factor for.
+          : The address of the vToken to check if listed and get the collateral
+          factor for.
         </Parameter>
         <Parameter name="RETURN">
           : Tuple of values (isListed, collateralFactorMantissa, isXvsed);

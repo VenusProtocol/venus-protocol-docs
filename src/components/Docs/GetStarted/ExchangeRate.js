@@ -43,7 +43,8 @@ function ExchangeRate() {
       </Description>
       <HighLighter>{formula1}</HighLighter>
       <Description>
-        Here is an example of finding the value of 1 vBUSD in BUSD with Web3.js JavaScript.
+        Here is an example of finding the value of 1 vBUSD in BUSD with Web3.js
+        JavaScript.
       </Description>
       <HighLighter>{formula2}</HighLighter>
       <Description>

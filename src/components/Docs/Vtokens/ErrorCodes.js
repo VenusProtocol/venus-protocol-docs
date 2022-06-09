@@ -116,15 +116,18 @@ const errorCodeList = [
   },
   {
     name: 'TOKEN_INSUFICIENT_ALLOWANCE',
-    description: 'BEP-20 contract must allow Money Market contract to call transferFrom. The current allowance is either 0 or less than the requested supply, repayBorrow or liquidate amount.'
+    description:
+      'BEP-20 contract must allow Money Market contract to call transferFrom. The current allowance is either 0 or less than the requested supply, repayBorrow or liquidate amount.'
   },
   {
     name: 'TOKEN_INSUFFICIENT_BALANCE',
-    description: 'Caller does not have sufficient balance in the BEP-20 contract to complete the desired action.'
+    description:
+      'Caller does not have sufficient balance in the BEP-20 contract to complete the desired action.'
   },
   {
     name: 'TOKEN_INSUFFICIENT_CASH',
-    description: 'The market does not have a sufficient cash balance to complete the transaction. You may attempt this transaction again later.'
+    description:
+      'The market does not have a sufficient cash balance to complete the transaction. You may attempt this transaction again later.'
   },
   {
     name: 'TOKEN_TRANSFER_IN_FAILED',

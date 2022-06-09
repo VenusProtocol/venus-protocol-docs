@@ -52,11 +52,11 @@ function CalculateInterest() {
       <Description>
         Alice supplies 1 BNB to the Venus protocol. At the time of supply, the
         supplyRatePerBlock is 37893605 Wei, or 0.000000000037893605 BNB per
-        block. No one interacts with the vBNB contract for 3 BSC blocks.
-        On the subsequent 4th block, Bob borrows some BNB. Alice’s underlying
-        balance is now 1.000000000151574420 BNB (which is 37893605 Wei times 4
-        blocks, plus the original 1 BNB). Alice’s underlying BNB balance in
-        subsequent blocks will have interest accrued based on the new value of
+        block. No one interacts with the vBNB contract for 3 BSC blocks. On the
+        subsequent 4th block, Bob borrows some BNB. Alice’s underlying balance
+        is now 1.000000000151574420 BNB (which is 37893605 Wei times 4 blocks,
+        plus the original 1 BNB). Alice’s underlying BNB balance in subsequent
+        blocks will have interest accrued based on the new value of
         1.000000000151574420 BNB instead of the initial 1 BNB. Note that the
         supplyRatePerBlock value may change at any time.
       </Description>

@@ -20,9 +20,9 @@ function VotingDelay() {
         Voting Delay
       </Label>
       <Description>
-        The number of BSC blocks to wait before voting on a proposal may
-        begin. This value is added to the current block number when a proposal
-        is created.
+        The number of BSC blocks to wait before voting on a proposal may begin.
+        This value is added to the current block number when a proposal is
+        created.
       </Description>
       <SubSection>
         <Label marginBottom>Governor Alpha</Label>

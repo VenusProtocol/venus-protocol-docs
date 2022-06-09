@@ -66,7 +66,10 @@ function KeyEvents() {
               <p>MarketEntered(vToken vToken, address account)</p>
             </div>
             <div className="flex align-center description">
-              <p>Emitted upon a successful <a href="#unitroller-enter-markets">Enter Market</a>.</p>
+              <p>
+                Emitted upon a successful{' '}
+                <a href="#unitroller-enter-markets">Enter Market</a>.
+              </p>
             </div>
           </div>
           <div className="flex table-item">
@@ -74,7 +77,10 @@ function KeyEvents() {
               <p>MarketExited(vToken vToken, address account)</p>
             </div>
             <div className="flex align-center description">
-              <p>Emitted upon a successful <a href="#unitroller-exit-market">Exit Market</a>.</p>
+              <p>
+                Emitted upon a successful{' '}
+                <a href="#unitroller-exit-market">Exit Market</a>.
+              </p>
             </div>
           </div>
         </div>

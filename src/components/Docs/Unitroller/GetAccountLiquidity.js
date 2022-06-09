@@ -25,9 +25,12 @@ const GetAccountLiquidityWrapper = styled.div`
 `;
 
 function GetAccountLiquidity() {
-  const unitrollerFormula = 'function getAccountLiquidity(address account) view returns (uint, uint, uint)';
-  const solidityFormula = 'Unitroller troll = Unitroller(0xABCD...);\n(uint error, uint liquidity, uint shortfall) = troll.getAccountLiquidity(msg.caller);\nrequire(error == 0, "join the Discord");\nrequire(shortfall == 0, "account underwater");\nrequire(liquidity > 0, "account has excess collateral");';
-  const web3Formular = 'const troll = Unitroller.at(0xABCD...);\nconst result = await troll.methods.getAccountLiquidity(0xBorrower).call();\nconst {0: error, 1: liquidity, 2: shortfall} = result;';
+  const unitrollerFormula =
+    'function getAccountLiquidity(address account) view returns (uint, uint, uint)';
+  const solidityFormula =
+    'Unitroller troll = Unitroller(0xABCD...);\n(uint error, uint liquidity, uint shortfall) = troll.getAccountLiquidity(msg.caller);\nrequire(error == 0, "join the Discord");\nrequire(shortfall == 0, "account underwater");\nrequire(liquidity > 0, "account has excess collateral");';
+  const web3Formular =
+    'const troll = Unitroller.at(0xABCD...);\nconst result = await troll.methods.getAccountLiquidity(0xBorrower).call();\nconst {0: error, 1: liquidity, 2: shortfall} = result;';
 
   return (
     <GetAccountLiquidityWrapper id="unitroller-get-account-liquidity">
@@ -51,8 +54,8 @@ function GetAccountLiquidity() {
         factor times each USD withdrawn.
       </Description>
       <Description>
-        Because the Venus Protocol exclusively uses unsigned integers,
-        Account Liquidity returns either a surplus or shortfall.
+        Because the Venus Protocol exclusively uses unsigned integers, Account
+        Liquidity returns either a surplus or shortfall.
       </Description>
       <Label marginTop>Unitroller</Label>
       <HighLighter>{unitrollerFormula}</HighLighter>

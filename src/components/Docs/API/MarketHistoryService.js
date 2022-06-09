@@ -212,8 +212,6 @@ const ratelist = [
   }
 ];
 
-
-
 function AccountService() {
   const headFormula = `// Returns 10 buckets of market data
   fetch("https://api.venus.io/api/market_history/graph?asset=0xf5dce57282a584d2746faf1593d3121fcac444dc&min_block_timestamp=1556747900&max_block_timestamp=1559339900&num_buckets=10");`;

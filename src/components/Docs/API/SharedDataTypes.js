@@ -108,7 +108,8 @@ const preciseList = [
   {
     type: 'string',
     key: 'value',
-    description: 'The full UNSIGNED number in string form. max value is 2^257 - 1,aka 231584178474632390847141970017375815706539969331281128078915168015826259279871'
+    description:
+      'The full UNSIGNED number in string form. max value is 2^257 - 1,aka 231584178474632390847141970017375815706539969331281128078915168015826259279871'
   }
 ];
 

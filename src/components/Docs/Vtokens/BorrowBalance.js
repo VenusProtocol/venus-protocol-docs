@@ -11,7 +11,8 @@ const BorrowBalanceWrapper = styled.div`
 `;
 
 function BorrowBalance() {
-  const vtokenFormula = 'function borrowBalanceCurrent(address account) returns (uint)';
+  const vtokenFormula =
+    'function borrowBalanceCurrent(address account) returns (uint)';
   const solidityFormula =
     'VBep20 vToken = VToken(0x3FDA...);\nuint borrows = vToken.borrowBalanceCurrent(msg.caller);';
   const web3Formula =

@@ -15,9 +15,12 @@ const EnterMarketsWrapper = styled.div`
 `;
 
 function EnterMarkets() {
-  const unitrollerFormula = 'function enterMarkets(address[] calldata vTokens) returns (uint[] memory)';
-  const solidityFormula = 'Unitroller troll = Unitroller(0xABCD...);\nvToken[] memory vTokens = new vToken[](2);\nvTokens[0] = CErc20(0x3FDA...);\nvTokens[1] = CEther(0x3FDB...);\nuint[] memory errors = troll.enterMarkets(vTokens);';
-  const web3Formular = 'const troll = Unitroller.at(0xABCD...);\nconst vTokens = [CErc20.at(0x3FDA...), CEther.at(0x3FDB...)];\nconst errors = await troll.methods.enterMarkets(vTokens).send({from: ...});';
+  const unitrollerFormula =
+    'function enterMarkets(address[] calldata vTokens) returns (uint[] memory)';
+  const solidityFormula =
+    'Unitroller troll = Unitroller(0xABCD...);\nvToken[] memory vTokens = new vToken[](2);\nvTokens[0] = CErc20(0x3FDA...);\nvTokens[1] = CEther(0x3FDB...);\nuint[] memory errors = troll.enterMarkets(vTokens);';
+  const web3Formular =
+    'const troll = Unitroller.at(0xABCD...);\nconst vTokens = [CErc20.at(0x3FDA...), CEther.at(0x3FDB...)];\nconst errors = await troll.methods.enterMarkets(vTokens).send({from: ...});';
 
   return (
     <EnterMarketsWrapper id="unitroller-enter-markets">

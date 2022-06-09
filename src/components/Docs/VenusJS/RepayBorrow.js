@@ -29,8 +29,8 @@ function RepayBorrow() {
         Repay Borrow
       </Label>
       <Description>
-        Repays a borrowed BSC asset for the user or on behalf of another
-        BSC address.
+        Repays a borrowed BSC asset for the user or on behalf of another BSC
+        address.
       </Description>
       <ParameterSection>
         <Parameter name="asset">

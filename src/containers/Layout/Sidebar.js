@@ -58,7 +58,10 @@ function Sidebar({ tabType, history }) {
   useEffect(() => {
     if (offset < 60) {
       setPosition('static');
-    } else if (offset > 60 && offset < content.scrollHeight - 600 - window.innerHeight) {
+    } else if (
+      offset > 60 &&
+      offset < content.scrollHeight - 600 - window.innerHeight
+    ) {
       setPosition('fixed');
       setTop(80);
     } else {
@@ -90,7 +93,9 @@ function Sidebar({ tabType, history }) {
 
   useEffect(() => {
     if (content && tabType && history.location) {
-      const hash = history.location.hash ? history.location.hash.substr(1) : 'introduction';
+      const hash = history.location.hash
+        ? history.location.hash.substr(1)
+        : 'introduction';
       const menuItem = document.getElementById(`${tabType}-${hash}`);
       if (menuItem) {
         content.scrollTo({
@@ -115,7 +120,13 @@ function Sidebar({ tabType, history }) {
           <a
             href={`#${d.hash}`}
             key={d.hash}
-            className={`#${d.hash}` === (history.location.hash || `#${data[tabType || 'getstarted'][0].hash}`) ? 'flex align-center item-active' : 'flex align-center'}
+            className={
+              `#${d.hash}` ===
+              (history.location.hash ||
+                `#${data[tabType || 'getstarted'][0].hash}`)
+                ? 'flex align-center item-active'
+                : 'flex align-center'
+            }
             onClick={() => {
               isLockScroll = true;
               const menuItem = document.getElementById(`${tabType}-${d.hash}`);

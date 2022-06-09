@@ -19,9 +19,12 @@ const GetAssetInWrapper = styled.div`
 `;
 
 function GetAssetIn() {
-  const unitrollerFormula = 'function getAssetsIn(address account) view returns (address[] memory)';
-  const solidityFormula = 'Unitroller troll = Unitroller(0xABCD...);\naddress[] memory markets = troll.getAssetsIn(0xMyAccount);';
-  const web3Formular = 'const troll = Unitroller.at(0xABCD...);\nconst markets = await troll.methods.getAssetsIn(vTokens).call();';
+  const unitrollerFormula =
+    'function getAssetsIn(address account) view returns (address[] memory)';
+  const solidityFormula =
+    'Unitroller troll = Unitroller(0xABCD...);\naddress[] memory markets = troll.getAssetsIn(0xMyAccount);';
+  const web3Formular =
+    'const troll = Unitroller.at(0xABCD...);\nconst markets = await troll.methods.getAssetsIn(vTokens).call();';
 
   return (
     <GetAssetInWrapper id="unitroller-get-assets-in">
@@ -31,7 +34,9 @@ function GetAssetIn() {
       <Description>
         Get the list of markets an account is currently entered into. In order
         to supply collateral or borrow in a market, it must be entered first.
-        Entered markets count towards <a href="#unitroller-get-account-liquidity">account liquidity</a> calculations.
+        Entered markets count towards{' '}
+        <a href="#unitroller-get-account-liquidity">account liquidity</a>{' '}
+        calculations.
       </Description>
       <Label marginTop>Unitroller</Label>
       <HighLighter>{unitrollerFormula}</HighLighter>

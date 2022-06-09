@@ -66,7 +66,8 @@ function LiquidateBorrow() {
             borrower, that the liquidator shall seize.
           </Parameter>
           <Parameter name="RETURN">
-            : 0 on success, otherwise an <a href="#vtokens-error-codes">Error code</a>
+            : 0 on success, otherwise an{' '}
+            <a href="#vtokens-error-codes">Error code</a>
           </Parameter>
         </ParameterSection>
         <Description>

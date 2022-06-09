@@ -91,37 +91,44 @@ const requestList = [
   {
     type: 'bytes',
     key: 'addresses',
-    description: 'List of account addresses to filter on, e.g.: ["0x...",,"0x..."]'
+    description:
+      'List of account addresses to filter on, e.g.: ["0x...",,"0x..."]'
   },
   {
     type: 'Precise',
     key: 'min_borrow_value_in_eth',
-    description: 'Filter for accounts which total outstanding borrows exceeding given amount.'
+    description:
+      'Filter for accounts which total outstanding borrows exceeding given amount.'
   },
   {
     type: 'Precise',
     key: 'max_health',
-    description: 'Filter for accounts where outstanding borrows divided by collateral value is leass than the provided amount. If returned value is less than 1.0, for instance, the account is subject to liquidation. If provided, should be given as `{"value": "...string formatted number..."}'
+    description:
+      'Filter for accounts where outstanding borrows divided by collateral value is leass than the provided amount. If returned value is less than 1.0, for instance, the account is subject to liquidation. If provided, should be given as `{"value": "...string formatted number..."}'
   },
   {
     type: 'uint32',
     key: 'block_number',
-    description: 'If provided, API returns data for given block number from our historical data. Otherwise, API defaults to returning the latest information.'
+    description:
+      'If provided, API returns data for given block number from our historical data. Otherwise, API defaults to returning the latest information.'
   },
   {
     type: 'uint32',
     key: 'block_timestamp',
-    description: 'If provided, API returns data for given timestamp from our historical data. Otherwise, API defaults to returning the latest information.'
+    description:
+      'If provided, API returns data for given timestamp from our historical data. Otherwise, API defaults to returning the latest information.'
   },
   {
     type: 'uint32',
     key: 'page_size',
-    description: 'Number of accounts to include in the response, default is 10 e.g. page_size=10'
+    description:
+      'Number of accounts to include in the response, default is 10 e.g. page_size=10'
   },
   {
     type: 'uint32',
     key: 'page_number',
-    description: 'Pagination number for accounts in the response, default is 1 e.g. page_number=1'
+    description:
+      'Pagination number for accounts in the response, default is 1 e.g. page_number=1'
   },
   {
     type: 'string',
@@ -149,7 +156,8 @@ const responseList = [
   {
     type: 'Account',
     key: 'accounts',
-    description: 'The list of accounts (see Account below) matching the requested filter, with the associated account and vToken data.'
+    description:
+      'The list of accounts (see Account below) matching the requested filter, with the associated account and vToken data.'
   }
 ];
 
@@ -162,17 +170,20 @@ const accountList = [
   {
     type: 'Precise',
     key: 'total_collateral_value_in_eth',
-    description: 'The value of all collateral supplied by the account. Calculated as vTokens held • exchange rate • collateral factor. Note: assets can be supplied and gain interest without being counted as collateral.'
+    description:
+      'The value of all collateral supplied by the account. Calculated as vTokens held • exchange rate • collateral factor. Note: assets can be supplied and gain interest without being counted as collateral.'
   },
   {
     type: 'Precise',
     key: 'total_borrow_value_in_eth',
-    description: 'The value of all outstanding borrows with accumulated interest.'
+    description:
+      'The value of all outstanding borrows with accumulated interest.'
   },
   {
     type: 'Precise',
     key: 'health',
-    description: 'If this value is less than 1.0, the account is subject to liquidation.'
+    description:
+      'If this value is less than 1.0, the account is subject to liquidation.'
   },
   {
     type: 'int32',
@@ -182,7 +193,8 @@ const accountList = [
   {
     type: 'AccountVToken',
     key: 'tokens',
-    description: 'A list of tokens held by this account, see AccountVToken below for details.'
+    description:
+      'A list of tokens held by this account, see AccountVToken below for details.'
   }
 ];
 
@@ -205,17 +217,20 @@ const accountVtokenList = [
   {
     type: 'Precise',
     key: 'borrow_balance_underlying',
-    description: 'The borrow balance (this is denominated in the underlying token, not in vTokens)'
+    description:
+      'The borrow balance (this is denominated in the underlying token, not in vTokens)'
   },
   {
     type: 'Precise',
     key: 'lifetime_supply_interest_accrued',
-    description: 'The amount of supply interest accrued for the lifetime of this account-vToken pair.'
+    description:
+      'The amount of supply interest accrued for the lifetime of this account-vToken pair.'
   },
   {
     type: 'Precise',
     key: 'lifetime_borrow_interest_accrued',
-    description: 'The amount of borrow interest accrued for the lifetime of this account-vToken pair.'
+    description:
+      'The amount of borrow interest accrued for the lifetime of this account-vToken pair.'
   },
   {
     type: 'Precise',

@@ -19,9 +19,12 @@ const ClaimXVSWrapper = styled.div`
 `;
 
 function ClaimXVS() {
-  const unitrollerFormula = '// Claim all the XVS accrued by holder in all markets\nfunction claimVenus(address holder) public\n\n// Claim all the XVS accrued by holder in specific markets\nfunction claimVenus(address holder, vToken[] memory vTokens) public\n\n// Claim all the XVS accrued by specific holders in specific markets for their supplies and/or borrows\nfunction claimVenus(address[] memory holders, vToken[] memory vTokens, bool borrowers, bool suppliers) public';
-  const solidityFormula = 'Unitroller troll = Unitroller(0xABCD...);\ntroll.claimVenus(0x1234...);';
-  const web3Formular = 'const unitroller = new web3.eth.Contract(unitrollerAbi, unitrollerAddress);\nawait unitroller.methods.claimVenus("0x1234...").send({ from: sender });';
+  const unitrollerFormula =
+    '// Claim all the XVS accrued by holder in all markets\nfunction claimVenus(address holder) public\n\n// Claim all the XVS accrued by holder in specific markets\nfunction claimVenus(address holder, vToken[] memory vTokens) public\n\n// Claim all the XVS accrued by specific holders in specific markets for their supplies and/or borrows\nfunction claimVenus(address[] memory holders, vToken[] memory vTokens, bool borrowers, bool suppliers) public';
+  const solidityFormula =
+    'Unitroller troll = Unitroller(0xABCD...);\ntroll.claimVenus(0x1234...);';
+  const web3Formular =
+    'const unitroller = new web3.eth.Contract(unitrollerAbi, unitrollerAddress);\nawait unitroller.methods.claimVenus("0x1234...").send({ from: sender });';
 
   return (
     <ClaimXVSWrapper id="unitroller-claim-xvs">

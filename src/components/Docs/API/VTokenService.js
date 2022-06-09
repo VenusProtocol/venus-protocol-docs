@@ -91,17 +91,20 @@ const requestList = [
   {
     type: 'bytes',
     key: 'addresses',
-    description: 'List of token addresses to filter on, e.g.: ["0x...", ,"0x..."]'
+    description:
+      'List of token addresses to filter on, e.g.: ["0x...", ,"0x..."]'
   },
   {
     type: 'uint32',
     key: 'block_number',
-    description: 'Only one of block_number or block timestamp should be provided. If provided, API returns data for given block number from our historical data. Otherwise, API defaults to returning the latest information.'
+    description:
+      'Only one of block_number or block timestamp should be provided. If provided, API returns data for given block number from our historical data. Otherwise, API defaults to returning the latest information.'
   },
   {
     type: 'uint32',
     key: 'block_timestamp',
-    description: 'Only one of block_number or block timestamp should be provided. If provided, API returns data for given block timestamp from our historical data. Otherwise, API defaults to returning the latest information.'
+    description:
+      'Only one of block_number or block timestamp should be provided. If provided, API returns data for given block timestamp from our historical data. Otherwise, API defaults to returning the latest information.'
   },
   {
     type: 'bool',
@@ -129,7 +132,8 @@ const responseList = [
   {
     type: 'VToken',
     key: 'vToken',
-    description: 'The list of vToken (see VToken below) matching the requested filter.'
+    description:
+      'The list of vToken (see VToken below) matching the requested filter.'
   },
   {
     type: 'VTokenMeta',
@@ -167,7 +171,8 @@ const vTokenList = [
   {
     type: 'Precise',
     key: 'exchange_rate',
-    description: 'The vToken / underlying exchange rate. This rate increases over time as supply interest accrues.'
+    description:
+      'The vToken / underlying exchange rate. This rate increases over time as supply interest accrues.'
   },
   {
     type: 'Precise',
@@ -182,7 +187,8 @@ const vTokenList = [
   {
     type: 'Precise',
     key: 'collateral_factor',
-    description: 'The amount of the value of the underlying token that will count as collateral. eg. cEth with collataral factor 0.75 means 1 eth of supply allows 0.75 eth of borrowing.'
+    description:
+      'The amount of the value of the underlying token that will count as collateral. eg. cEth with collataral factor 0.75 means 1 eth of supply allows 0.75 eth of borrowing.'
   },
   {
     type: 'uint32',
@@ -247,7 +253,8 @@ const vTokenList = [
   {
     type: 'Precise',
     key: 'borrow_cap',
-    description: 'The maximum size of total borrows for this market, beyond which no new borrows will be given'
+    description:
+      'The maximum size of total borrows for this market, beyond which no new borrows will be given'
   }
 ];
 
@@ -255,12 +262,14 @@ const vTokenMetaList = [
   {
     type: 'uint32',
     key: 'unique_suppliers',
-    description: 'Number of non-duplicate suppliers between all specified markets'
+    description:
+      'Number of non-duplicate suppliers between all specified markets'
   },
   {
     type: 'uint32',
     key: 'unique_borrowers',
-    description: 'Number of non-duplicate borrowers between all specified markets'
+    description:
+      'Number of non-duplicate borrowers between all specified markets'
   }
 ];
 

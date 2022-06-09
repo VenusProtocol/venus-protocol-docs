@@ -7,7 +7,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "pretty": "yarn prettier \"src/**/*.{js,jsx,html,json,md}\" public/**/*.html --check"
   },
   "dependencies": {
     "@material-ui/core": "^4.6.0",

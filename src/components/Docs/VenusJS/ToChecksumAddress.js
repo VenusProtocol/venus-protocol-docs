@@ -15,9 +15,7 @@ function ToChecksumAddress() {
       <Label title marginBottom>
         To Checksum Address
       </Label>
-      <Description>
-        Applies the EIP-55 checksum to an BSC address.
-      </Description>
+      <Description>Applies the EIP-55 checksum to an BSC address.</Description>
       <ParameterSection>
         <Parameter name="_address">
           {` (string) The BSC address to apply the checksum.`}

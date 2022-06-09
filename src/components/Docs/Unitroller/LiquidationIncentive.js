@@ -15,9 +15,12 @@ const LiquidationIncentiveWrapper = styled.div`
 `;
 
 function LiquidationIncentive() {
-  const unitrollerFormula = 'function liquidationIncentiveMantissa() view returns (uint)';
-  const solidityFormula = 'Unitroller troll = Unitroller(0xABCD...);\nuint closeFactor = troll.liquidationIncentiveMantissa();';
-  const web3Formular = 'const troll = Unitroller.at(0xABCD...);\nconst closeFactor = await troll.methods.liquidationIncentiveMantissa().call();';
+  const unitrollerFormula =
+    'function liquidationIncentiveMantissa() view returns (uint)';
+  const solidityFormula =
+    'Unitroller troll = Unitroller(0xABCD...);\nuint closeFactor = troll.liquidationIncentiveMantissa();';
+  const web3Formular =
+    'const troll = Unitroller.at(0xABCD...);\nconst closeFactor = await troll.methods.liquidationIncentiveMantissa().call();';
 
   return (
     <LiquidationIncentiveWrapper id="unitroller-liquidation-incentive">

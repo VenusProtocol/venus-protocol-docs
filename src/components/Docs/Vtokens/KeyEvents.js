@@ -75,7 +75,8 @@ function KeyEvents() {
       </div>
       <div className="list-section">
         <div className="name">
-          Borrow(address borrower, uint borrowAmount, uint accountBorrows, uint totalBorrows)
+          Borrow(address borrower, uint borrowAmount, uint accountBorrows, uint
+          totalBorrows)
         </div>
         <div className="description">
           Emitted upon a successful <a href="#vtokens-borrow">Borrow</a>.
@@ -83,7 +84,8 @@ function KeyEvents() {
       </div>
       <div className="list-section">
         <div className="name">
-          RepayBorrow(address payer, address borrower, uint repayAmount, uint accountBorrows, uint totalBorrows)
+          RepayBorrow(address payer, address borrower, uint repayAmount, uint
+          accountBorrows, uint totalBorrows)
         </div>
         <div className="description">
           Emitted upon a successful{' '}
@@ -92,7 +94,8 @@ function KeyEvents() {
       </div>
       <div className="list-section">
         <div className="name">
-          LiquidateBorrow(address liquidator, address borrower, uint repayAmount, address vTokenCollateral, uint seizeTokens)
+          LiquidateBorrow(address liquidator, address borrower, uint
+          repayAmount, address vTokenCollateral, uint seizeTokens)
         </div>
         <div className="description">
           Emitted upon a successful{' '}

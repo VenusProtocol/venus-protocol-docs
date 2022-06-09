@@ -96,22 +96,26 @@ const requestList = [
   {
     type: 'string',
     key: 'state',
-    description: 'The state of the proposal to filter on, (e.g.: "pending", "active", "canceled", "defeated", "succeeded", "queued", "expired", "executed")'
+    description:
+      'The state of the proposal to filter on, (e.g.: "pending", "active", "canceled", "defeated", "succeeded", "queued", "expired", "executed")'
   },
   {
     type: 'bool',
     key: 'with_detail',
-    description: 'Set as true to include proposer and action data, default is false'
+    description:
+      'Set as true to include proposer and action data, default is false'
   },
   {
     type: 'uint32',
     key: 'page_size',
-    description: 'Number of proposals to include in the response, default is 10 e.g.\npage_size=10'
+    description:
+      'Number of proposals to include in the response, default is 10 e.g.\npage_size=10'
   },
   {
     type: 'uint32',
     key: 'page_number',
-    description: 'Pagination number for proposals in the response, default is 1 e.g.\npage_number=1'
+    description:
+      'Pagination number for proposals in the response, default is 1 e.g.\npage_number=1'
   },
   {
     type: 'string',
@@ -180,22 +184,26 @@ const proposalList = [
   {
     type: 'string',
     key: 'description',
-    description: 'A description of the actions the proposal will take if successful'
+    description:
+      'A description of the actions the proposal will take if successful'
   },
   {
     type: 'DisplayXvsAccount',
     key: 'proposer',
-    description: 'Either null or an object with data about the creator of the proposal (See DisplayXvsAccount). Only populated when request submitted with_detail=true'
+    description:
+      'Either null or an object with data about the creator of the proposal (See DisplayXvsAccount). Only populated when request submitted with_detail=true'
   },
   {
     type: 'ProposalAction',
     key: 'actions',
-    description: 'Either null or an array of actions (See ProposalAction) that will be queued and executed if proposal succeeds. Only populated when request submitted with_detail=true'
+    description:
+      'Either null or an array of actions (See ProposalAction) that will be queued and executed if proposal succeeds. Only populated when request submitted with_detail=true'
   },
   {
     type: 'ProposalState',
     key: 'states',
-    description: 'An array of states (See ProposalState) that represent the state transitions that the proposal has undergone'
+    description:
+      'An array of states (See ProposalState) that represent the state transitions that the proposal has undergone'
   },
   {
     type: 'string',
@@ -228,7 +236,8 @@ const proposalActionList = [
   {
     type: 'string',
     key: 'signature',
-    description: 'The function signature of the function to call at the target address'
+    description:
+      'The function signature of the function to call at the target address'
   },
   {
     type: 'string',
@@ -241,7 +250,8 @@ const proposalStateList = [
   {
     type: 'string',
     key: 'state',
-    description: 'The state objects type, (e.g.: pending, active, canceled, defeated, succeeded, queued, expired, executed)'
+    description:
+      'The state objects type, (e.g.: pending, active, canceled, defeated, succeeded, queued, expired, executed)'
   },
   {
     type: 'uint32',
@@ -251,12 +261,14 @@ const proposalStateList = [
   {
     type: 'uint32',
     key: 'end_time',
-    description: 'Either null or the definitive end timestamp or an estimated end timestamp of the state'
+    description:
+      'Either null or the definitive end timestamp or an estimated end timestamp of the state'
   },
   {
     type: 'string',
     key: 'trx_hash',
-    description: 'Either null or the transaction hash that represents the state transition'
+    description:
+      'Either null or the transaction hash that represents the state transition'
   }
 ];
 

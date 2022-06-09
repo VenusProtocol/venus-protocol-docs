@@ -31,9 +31,9 @@ function Borrow() {
         Borrow
       </Label>
       <Description>
-        Borrows an BSC asset from the Venus Protocol for the user. The
-        user's address must first have supplied collateral and entered a
-        corresponding market.
+        Borrows an BSC asset from the Venus Protocol for the user. The user's
+        address must first have supplied collateral and entered a corresponding
+        market.
       </Description>
       <ParameterSection>
         <Parameter name="asset">

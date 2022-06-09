@@ -36,10 +36,12 @@ function RepayBorrow() {
           </Parameter>
           <Parameter name="borrowAmount">
             : The amount of the underlying borrowed asset to be repaid. A value
-            of -1 (i.e. 2<sup>256</sup> - 1) can be used to repay the full amount.
+            of -1 (i.e. 2<sup>256</sup> - 1) can be used to repay the full
+            amount.
           </Parameter>
           <Parameter name="RETURN">
-            : 0 on success, otherwise an <a href="#vtokens-error-codes">Error code</a>
+            : 0 on success, otherwise an{' '}
+            <a href="#vtokens-error-codes">Error code</a>
           </Parameter>
         </ParameterSection>
         <Description>

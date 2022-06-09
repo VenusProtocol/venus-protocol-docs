@@ -12,9 +12,7 @@ import VenusJS from 'containers/Docs/VenusJS';
 import Security from 'containers/Docs/Security';
 import VaiController from 'containers/Docs/VaiController';
 
-const DocsContainerWrapper = styled.div`
-  
-`;
+const DocsContainerWrapper = styled.div``;
 
 function DocsContainer() {
   return (

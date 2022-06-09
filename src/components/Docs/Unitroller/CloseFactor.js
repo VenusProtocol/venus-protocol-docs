@@ -15,9 +15,12 @@ const CloseFactorWrapper = styled.div`
 `;
 
 function CloseFactor() {
-  const unitrollerFormula = 'function closeFactorMantissa() view returns (uint)';
-  const solidityFormula = 'Unitroller troll = Unitroller(0xABCD...);\nuint closeFactor = troll.closeFactorMantissa();';
-  const web3Formular = 'const troll = Unitroller.at(0xABCD...);\nconst closeFactor = await troll.methods.closeFactoreMantissa().call();';
+  const unitrollerFormula =
+    'function closeFactorMantissa() view returns (uint)';
+  const solidityFormula =
+    'Unitroller troll = Unitroller(0xABCD...);\nuint closeFactor = troll.closeFactorMantissa();';
+  const web3Formular =
+    'const troll = Unitroller.at(0xABCD...);\nconst closeFactor = await troll.methods.closeFactoreMantissa().call();';
 
   return (
     <CloseFactorWrapper id="unitroller-close-factor">

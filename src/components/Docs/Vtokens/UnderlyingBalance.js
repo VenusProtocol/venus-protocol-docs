@@ -11,7 +11,8 @@ const UnderlyingBalanceWrapper = styled.div`
 `;
 
 function UnderlyingBalance() {
-  const vtokenFormula = 'function balanceOfUnderlying(address account) returns (uint)';
+  const vtokenFormula =
+    'function balanceOfUnderlying(address account) returns (uint)';
   const solidityFormula =
     'VBep20 vToken = VToken(0x3FDA...);\nuint tokens = vToken.balanceOfUnderlying(msg.caller);';
   const web3Formula =

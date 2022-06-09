@@ -19,9 +19,12 @@ const ExitMarketWrapper = styled.div`
 `;
 
 function ExitMarket() {
-  const unitrollerFormula = 'function exitMarket(address vToken) returns (uint)';
-  const solidityFormula = 'Unitroller troll = Unitroller(0xABCD...);\nvToken[] memory vTokens = new vToken[](2);\nvTokens[0] = CErc20(0x3FDA...);\nvTokens[1] = CEther(0x3FDB...);\nuint[] memory errors = troll.enterMarkets(vTokens);';
-  const web3Formular = 'const troll = Unitroller.at(0xABCD...);\nconst vTokens = [CErc20.at(0x3FDA...), CEther.at(0x3FDB...)];\nconst errors = await troll.methods.enterMarkets(vTokens).send({from: ...});';
+  const unitrollerFormula =
+    'function exitMarket(address vToken) returns (uint)';
+  const solidityFormula =
+    'Unitroller troll = Unitroller(0xABCD...);\nvToken[] memory vTokens = new vToken[](2);\nvTokens[0] = CErc20(0x3FDA...);\nvTokens[1] = CEther(0x3FDB...);\nuint[] memory errors = troll.enterMarkets(vTokens);';
+  const web3Formular =
+    'const troll = Unitroller.at(0xABCD...);\nconst vTokens = [CErc20.at(0x3FDA...), CEther.at(0x3FDB...)];\nconst errors = await troll.methods.enterMarkets(vTokens).send({from: ...});';
 
   return (
     <ExitMarketWrapper id="unitroller-exit-market">

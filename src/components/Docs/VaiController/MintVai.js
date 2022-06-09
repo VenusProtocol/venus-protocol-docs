@@ -24,7 +24,8 @@ function MintVai() {
       <Description>
         The mintVAI function mints and transfers VAI from the protocol to the
         user, and adds a borrow balance. The amount minted must be less than the
-        user's <a href="unitroller#get-account-liquidity">Account Liquidity</a> and the mint vai limit.
+        user's <a href="unitroller#get-account-liquidity">Account Liquidity</a>{' '}
+        and the mint vai limit.
       </Description>
       <SubSection>
         <Label marginBottom>VAIController</Label>

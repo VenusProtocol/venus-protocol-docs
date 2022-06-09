@@ -110,7 +110,8 @@ function SubHeader() {
     window.location &&
     subRouters.filter(r => r.path === window.location.pathname).length !== 0
   ) {
-    subPathName = subRouters.filter(r => r.path === window.location.pathname)[0].label;
+    subPathName = subRouters.filter(r => r.path === window.location.pathname)[0]
+      .label;
   }
 
   return (
