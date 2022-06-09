@@ -76,7 +76,7 @@ function Guides() {
             <div className="flex align-center just-center order-number">
               {index + 1}
             </div>
-            <a href={g.url} target="_blank">
+            <a href={g.url} target="_blank" rel="noreferrer">
               {g.label}
             </a>
           </div>

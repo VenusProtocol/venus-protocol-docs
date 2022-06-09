@@ -37,6 +37,7 @@ function MarketMetadata() {
           href="https://github.com/SwipeWallet/venus-protocol/blob/master/contracts/ComptrollerStorage.sol"
           // eslint-disable-next-line react/jsx-no-target-blank
           target="_blank"
+          rel="noreferrer"
         >
           Unitroller Storage contract
         </a>{' '}

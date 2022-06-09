@@ -149,7 +149,7 @@ function Footer() {
       </div>
       <p className="copyright">
         © 2021 Developed by Swipe Wallet.
-        <br></br>
+        <br />
         Licensed & open-source under the MIT License
       </p>
     </FooterWrapper>

@@ -26,7 +26,7 @@ function CalculateInterest() {
       </Description>
       <Description>
         See the interest rate data visualization notebook on{' '}
-        <a href="https://xvs-calculator.com/" target="_blank">
+        <a href="https://xvs-calculator.com/" target="_blank" rel="noreferrer">
           Observable
         </a>{' '}
         to visualize which interest rate model is currently applied to each

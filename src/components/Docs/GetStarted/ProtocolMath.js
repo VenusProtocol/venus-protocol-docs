@@ -33,6 +33,7 @@ function ProtocolMath() {
           href="https://github.com/SwipeWallet/venus-protocol/blob/master/contracts/Exponential.sol"
           // eslint-disable-next-line react/jsx-no-target-blank
           target="_blank"
+          rel="noreferrer"
         >
           Exponential.sol
         </a>
